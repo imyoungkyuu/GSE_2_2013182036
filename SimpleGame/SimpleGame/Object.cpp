@@ -6,7 +6,13 @@ Object::Object(float x, float y, float z, float size, float r, float g, float b,
 	m_x = x;
 	m_y = y;
 	m_z = z;
+	m_vX = 1;
+	m_vY = 0;
 	m_size = size;
+	m_color[0] = 1;
+	m_color[1] = 1;
+	m_color[2] = 1;
+	m_color[3] = 1;
 	m_r = r;
 	m_g = g;
 	m_b = b;
@@ -16,8 +22,8 @@ Object::Object(float x, float y, float z, float size, float r, float g, float b,
 
 Object::~Object()
 {
-}
 
+}
 
 float Object::getPosX()
 {
@@ -41,7 +47,7 @@ float Object::getPosSize()
 }
 
 float Object::getPosR()
-{
+{ 
 	return m_r;
 }
 
@@ -61,7 +67,7 @@ float Object::getPosA()
 }
 void Object::Update()
 {
-	float elapsedTime = 1.5;
+	float elapsedTime = 0.2;
 	m_x = m_x + m_vX * elapsedTime;
 	m_y = m_y + m_vY * elapsedTime;
 

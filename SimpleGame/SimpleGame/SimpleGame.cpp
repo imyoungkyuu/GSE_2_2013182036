@@ -23,7 +23,16 @@ void RenderScene(void)
 	glClearColor(0.0f, 0.3f, 0.3f, 1.0f);
 
 	// Renderer Test
-	g_Renderer->DrawSolidRect(0, 0, 0, 4, 1, 0, 1, 1);
+	g_Renderer->DrawSolidRect(
+		g_Object->m_x,
+		g_Object->m_y,
+		0,
+		g_Object->m_size,
+		g_Object->m_color[0],
+		g_Object->m_color[1],
+		g_Object->m_color[2],
+		g_Object->m_color[3]
+	);
 
 	g_Object->Update();
 	glutSwapBuffers();
@@ -82,8 +91,10 @@ int main(int argc, char **argv)
 	glutMouseFunc(MouseInput);
 	glutSpecialFunc(SpecialKeyInput);
 
-	glutMainLoop();
+	g_Object = new Object(0,0,0,10,0,0,0,0);
 
+	glutMainLoop();
+	delete g_Renderer;
 	delete g_Renderer;
 
     return 0;

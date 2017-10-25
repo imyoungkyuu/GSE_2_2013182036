@@ -1,5 +1,4 @@
-﻿  SimpleGame.cpp
-  Object.cpp
-  코드를 생성하고 있습니다...
-  SimpleGame.vcxproj -> C:\Users\sun2s\Desktop\SimpleGame\x64\Debug\SimpleGame.exe
-  SimpleGame.vcxproj -> C:\Users\sun2s\Desktop\SimpleGame\x64\Debug\SimpleGame.pdb (Partial PDB)
+﻿  Object.cpp
+c:\gse_project\gse_2_2013182036\simplegame\simplegame\object.cpp(70): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  SimpleGame.vcxproj -> C:\GSE_Project\GSE_2_2013182036\SimpleGame\x64\Debug\SimpleGame.exe
+  SimpleGame.vcxproj -> C:\GSE_Project\GSE_2_2013182036\SimpleGame\x64\Debug\SimpleGame.pdb (Partial PDB)
